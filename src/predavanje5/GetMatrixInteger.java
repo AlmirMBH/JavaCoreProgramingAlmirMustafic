@@ -25,12 +25,12 @@ public class GetMatrixInteger {
             }
         };
         
-        int i ; 
+        int i = 0; 
         int j = 0; 
         int k = 0;
         boolean foundIt = false;
         
-        for(i = 0; i<niz.length; i++){
+        LABEL: for(i = 0; i<niz.length; i++){
             int[][] niz1 = niz[i];
             
             for(j = 0; j < niz1.length; j++){
@@ -41,9 +41,9 @@ public class GetMatrixInteger {
             
                     if(var1 == uneseniBroj){
                         foundIt = true;
-                        break;
+                        break LABEL; //Indeks se neće dobro ispisivati bez LABEL
                     }        
-            System.out.print(var1 + " ");
+            //System.out.print(var1 + " ");
                 }
             }        
         }
