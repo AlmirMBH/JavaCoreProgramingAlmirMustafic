@@ -22,7 +22,7 @@ public class BreakWithLabel {
                     foundIt = true;
                     break LABEL;
             }            
-                //System.out.print(var);
+                System.out.print(var);
         }            
             //if(foundIt){
               //  break; } - Može se koristiti "if" u ovoj poziciji umjesto label
