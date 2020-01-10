@@ -14,21 +14,21 @@ public class SwitchCaseLeapYear {
                 
         int daysInMonth = 0;
         
-        switch(monthNumberInput){ //Ova tri SWITCH-a mogu se spojiti u jedan
+        switch(monthNumberInput){ 
             case 1: case 3: case 5: case 7: case 8: case 10: case 12:
                 daysInMonth = 31;                
-                break;}            
-        switch(monthNumberInput){    
-                case 4: case 6: case 9: case 11:
+                break;
+        
+            case 4: case 6: case 9: case 11:
                 daysInMonth = 30;                
-                break;}
-        switch(monthNumberInput){ 
-               case 2:
+                break;
+        
+            case 2:
                 if((yearNumberInput % 4 == 0 && yearNumberInput % 100 != 0) || (yearNumberInput % 400 == 0))
                     daysInMonth = 29;
                 else daysInMonth = 28;
                 break;
-        default:
+               default:
                 System.out.println("Neispravan broj mjeseca!");                
         } 
         

@@ -16,4 +16,4 @@ public class For {
           //  System.out.println("Ja sam u beskonačnoj petlji!");
         }
     }
-}
+

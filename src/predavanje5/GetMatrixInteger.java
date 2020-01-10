@@ -27,7 +27,7 @@ public class GetMatrixInteger {
         
         int i = 0; 
         int j = 0; 
-        int k = 0;
+        int k = 0;        
         boolean foundIt = false;
         
         LABEL: for(i = 0; i<niz.length; i++){
@@ -43,7 +43,7 @@ public class GetMatrixInteger {
                         foundIt = true;
                         break LABEL; //Indeks se neće dobro ispisivati bez LABEL
                     }        
-            //System.out.print(var1 + " ");
+            //System.out.println(var1 + " ");
                 }
             }        
         }

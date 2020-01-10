@@ -1,15 +1,3 @@
-/*package itacasovi;
-
-public class ITAZadaci{
-    public static void main(String[] args){
-        int x = 10;
-        int y = 5;
-        int z = x + y;
-        
-        System.out.println(z);
-        
-    }
-}*/
 
 
 //JAVA 3.2. PETLJE FOR, FOREACH, WHILE, DO-WHILE
@@ -17,19 +5,35 @@ public class ITAZadaci{
     import java.util.Arrays;
 public class ITAZadaci{
         public static void main(String[] args){        
-         //ZADATAK 3
+            
+        int[] numbers = {23, 34, 45, 56, 67, 13, 23, 21, 31, 3446};
+        // naslijeđena for petlja iz C++
+        for(int i = 0; i<numbers.length; i++){
+            System.out.println("Element na indeksu '" + i +"' = " + numbers[i]);
+        }
+        //enhanced for loop
+        for(int mutant : numbers){
+            System.out.println(mutant);
+        }
+        }
+}*/
+
+
+//ZADATAK 3
          
             
          //ZADATAK 2
-        /* String[][] users = {
-             {"petar", "petrovic", "1111"},
-             {"jovan", "jovanovic", "2222"},
+         /*String[][] users = {
+             {"petar", "petrovic", "1111"}, 
+             {"jovan", "jovanovic", "2222"}, 
              {"zoran", "zoranovic", "3333"}
          };
          String[] names = new String[users.length];
             for(int i = 0; i < users.length; i++)
-                names[i] = users[i][0];
-            System.out.println(java.util.Arrays.toString(names));*/
+                names[i] = users[0][i];
+            System.out.println(java.util.Arrays.toString(names));
+        }*/
+}
                 
         //ZADATAK 1
         /*int[] arr = {1, 2, -1, 4, 5, -1};
@@ -46,25 +50,35 @@ public class ITAZadaci{
         /*for(member = 0; member < 1000000; member ++){
               if(member != "teacher")
                   continue;//Preskače samo tekuću iteraciju petlje
-              System.out.print(member); }*/
+              System.out.println(member); }*/
         
         //KONTROLA PETLJE
-        /*for(int i = 0; i < 10; i++){
-        System.out.print("\n" + i + ":");
-            for(int u = 0; u < 10; u++){
+   /*     for(int i = 0; i < 10; i++){
+        System.out.print("\n" + i + ".");
+            
+        for(int u = 0; u < 10; u++){
                 System.out.print(u);
-                if(u == 5)
-                    break;  }   }*/
+                if(u == 6)
+                    break;  }   
+        }
+        }
+}*/
         
-        //FOREACH PETLJA (ČITA VRIJEDNOSTI NIZA; NE ČITA NJIHOVE INDEKSE
-        /*int[] numbers = {3, 5, 9};
+        //FOREACH PETLJA (ČITA VRIJEDNOSTI NIZA; NE ČITA NJIHOVE INDEKSE; PONAVLJA PETLJU ONOLIKO PUTA KOLIKO IMA ČLANOVA U NIZU)
+        /*int[] numbers = {3, 5, 9, 7};
         System.out.println("Numbers in this array are: ");
         for(int number : numbers){ //Za jednu liniju koda vitičaste zagrade nisu neophodne
-            System.out.println(number); }*/
+            System.out.println(number); }
         
+            numbers[3] = 5;
         
-        /*for(int i = 10; i > 0; i--)//Brojač petlje koji smanjuje vrijednost
-        {   System.out.println(i);  }*/
+       System.out.println(Arrays.toString(numbers));*/
+        /*int i = 9;
+        System.out.println(i);
+       for(i = 5; i > 0; i--)//Brojač petlje koji smanjuje vrijednost
+        {   System.out.println(i);  }
+        }
+        }*/
         
         //UGNIJEŽDENE PETLJE
         /*for(int i = 0; i < 5; i ++) //Izvršava petlju "u" <5 puta 
@@ -79,9 +93,9 @@ public class ITAZadaci{
         /*for(int counter = 0; counter < 5; counter ++) //counter += 2
             { System.out.println(counter);
             //(counter_initialization; condition; increment_counter{conditional_code}
-        }*/
+        }
 }
-}
+}*/
     
 
 
@@ -90,26 +104,29 @@ public class ITAZadaci{
      import java.util.Arrays;
 
     public class ITAZadaci{
-        public static void main(String[] args){
+        public static void main(String[] args){*/
             //ZADATAK 1______________________________________________________
-            /*int x = 523134; 
-            int y = 325423;
+            /*int x = 10; 
+            int y = 4;
             int remainder = x % y;
             
             switch(remainder){
                 case 0:
-                    System.out.println("division without reminder");
+                    System.out.println("division without remainder");
                     break;
                     
                 default:
-                    if(remainder > 1000);
+                    if(remainder > 1000){
                     System.out.println("remainder over 1000");
-                    else
+                    }
+                    else{
                     System.out.println("remainder below 1000");
-                    break;                    
-            }*/
+                    break;}                    
+            }
+        }
+    }*/
             //ZADATAK 2_____________________________________________________
-            /*String carMake = "Ford";
+            /*String carMake = "Mercedes";
             int doors = 3;
             
             switch(carMake){
@@ -135,9 +152,10 @@ public class ITAZadaci{
                         break;
             }
         }
-    }________________________________________________________________________*/ 
-            
-            /*int x = 3;
+    }
+//___________________________________________________________________*/ 
+      /*      
+            int x = 3;
         switch(x){
             case 1:
                 System.out.println("x = 0");
@@ -159,18 +177,23 @@ public class ITAZadaci{
                 System.out.println("x != 1, x != 2, x != 3");
         String a = "myValue";
         switch(a){
-            case "myValue":
+           case "myValue":
             System.out.println("myValue text");
-            break;
+            //break;
             
-            case "otherValue":
+            case "yourValue":
+            System.out.println("hisValue text");
+            //break;
+            
+           default: 
             System.out.println("otherValue text");
         }
         }
     }*/
 
 //JAVA 3.1. IF/ELSE KONSTRUKCIJA, TERNARNI OPERATOR
-/*package itacasovi;
+/*
+package itacasovi;
     
     public class ITAZadaci{
         public static void main(String[] args){
@@ -215,18 +238,18 @@ public class ITAZadaci{
                 System.out.println("Condition is not fullfilled!");
                     }
         }
-        }*/
-
+        }
+*/
 
 //JAVA 2.4. ZADATAK 2 SORTIRANJE I SABIRANJE NIZOVA
 /*package itacasovi;
 import java.util.Arrays;
 
 public class ITAZadaci{
-    public static void main(String[] args){
+    public static void main(String[] args){        
         int[] array = {1, 5, 33, 563, 0, 2, 23, 9, 9, 11, 987, 23, 934, 999, 43};
         System.out.println("This is the original array " + Arrays.toString(array));
-        Arrays.sort(array);
+        Arrays.sort(array);        
         System.out.println("This is the sorted array " + Arrays.toString(array));
     }
 }*/

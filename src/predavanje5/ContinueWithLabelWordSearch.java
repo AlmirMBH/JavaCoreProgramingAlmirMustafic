@@ -7,6 +7,7 @@ public class ContinueWithLabelWordSearch {
        System.out.println("Unesite riječ");
        String rijec = new Scanner(System.in).nextLine();
        String recenica = "Ovu recenicu skenirat cemo kako bi nasli unesenu rijec ili uneseno slovo.";
+       //String recenica1 = recenica.toLowerCase();
        
        int duzinaRecenice = recenica.length();
        int duzinaRijeci = rijec.length();
@@ -18,7 +19,7 @@ public class ContinueWithLabelWordSearch {
             for (int i = 0; i < max; i++){
             int brojac = i;
             for(int j = 0; j < rijec.length(); j++){
-               char recenicaSlovo = recenica.charAt(brojac); //Moglo je u zagradi da bude samo "++i" ili "i + j"; ali ne i "i++"
+               char recenicaSlovo = recenica.toLowerCase().charAt(brojac); //Moglo je u zagradi da bude samo "++i" ili "i + j"; ali ne i "i++"
             brojac++;
                 char rijecSlovo = rijec.charAt(j);
                 //int counter = 0;

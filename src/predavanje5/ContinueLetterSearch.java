@@ -20,6 +20,6 @@ public class ContinueLetterSearch {
             }
             brojPojavljivanja++;
         }
-        System.out.println("Uneseno slovo " + unesenoSlovo + " pojavljuje " + brojPojavljivanja + " puta.");
+        System.out.println("Uneseno slovo " + unesenoSlovo + " pojavljuje se " + brojPojavljivanja + " puta.");
     }
 }
