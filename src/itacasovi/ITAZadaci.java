@@ -6,7 +6,7 @@
 public class ITAZadaci{
         public static void main(String[] args){        
             
-        int[] numbers = {23, 34, 45, 56, 67, 13, 23, 21, 31, 3446};
+        /*int[] numbers = {23, 34, 45, 56, 67, 13, 23, 21, 31, 3446};
         // naslijeđena for petlja iz C++
         for(int i = 0; i<numbers.length; i++){
             System.out.println("Element na indeksu '" + i +"' = " + numbers[i]);
@@ -23,18 +23,18 @@ public class ITAZadaci{
          
             
          //ZADATAK 2
-         /*String[][] users = {
+        /* String[][] users = {
              {"petar", "petrovic", "1111"}, 
              {"jovan", "jovanovic", "2222"}, 
              {"zoran", "zoranovic", "3333"}
          };
          String[] names = new String[users.length];
             for(int i = 0; i < users.length; i++)
-                names[i] = users[0][i];
+                names[i] = users[i][i];
             System.out.println(java.util.Arrays.toString(names));
-        }*/
-}
-                
+        }
+}*/
+          
         //ZADATAK 1
         /*int[] arr = {1, 2, -1, 4, 5, -1};
         int[] arr1 = new int[arr.length];
@@ -95,18 +95,19 @@ public class ITAZadaci{
             //(counter_initialization; condition; increment_counter{conditional_code}
         }
 }
-}*/
+}
     
 
 
 //JAVA 3.2. SWITCH
 /*package itacasovi;
      import java.util.Arrays;
+import java.util.Scanner;
 
     public class ITAZadaci{
-        public static void main(String[] args){*/
+        public static void main(String[] args){
             //ZADATAK 1______________________________________________________
-            /*int x = 10; 
+            int x = 10; 
             int y = 4;
             int remainder = x % y;
             
@@ -126,7 +127,7 @@ public class ITAZadaci{
         }
     }*/
             //ZADATAK 2_____________________________________________________
-            /*String carMake = "Mercedes";
+           /* String carMake = "Mercedes";
             int doors = 3;
             
             switch(carMake){
@@ -152,31 +153,34 @@ public class ITAZadaci{
                         break;
             }
         }
-    }
+    }*/
 //___________________________________________________________________*/ 
-      /*      
-            int x = 3;
-        switch(x){
-            case 1:
-                System.out.println("x = 0");
+         /*   System.out.println("Unesite neki cijeli broj!");
+            int k = new Scanner(System.in).nextInt();
+            
+                switch(k){
+                case 1:
+                System.out.println("Vaš broj " + k + " nalazi se u nizu");
                 break;//Ukoliko se dio koda ne ograniči sa 'break', kod se u potpunosti izvršava
                 
                 case 2:
-                System.out.println("x = 1");
+                System.out.println("Vaš broj " + k + " nalazi se u nizu");
                 break;
                 
                 case 3:
-                System.out.println("x = 2");
+                System.out.println("Vaš broj " + k + " nalazi se u nizu");
                 break;
                 
                 case 4:
-                System.out.println("x = 3");
+                System.out.println("Vaš broj " + k + " nalazi se u nizu");
                 break;
                 
                 default:
                 System.out.println("x != 1, x != 2, x != 3");
+        
+                
         String a = "myValue";
-        switch(a){
+            switch(a){
            case "myValue":
             System.out.println("myValue text");
             //break;
@@ -189,11 +193,12 @@ public class ITAZadaci{
             System.out.println("otherValue text");
         }
         }
+    }
     }*/
 
 //JAVA 3.1. IF/ELSE KONSTRUKCIJA, TERNARNI OPERATOR
-/*
-package itacasovi;
+
+/*package itacasovi;
     
     public class ITAZadaci{
         public static void main(String[] args){
@@ -238,8 +243,8 @@ package itacasovi;
                 System.out.println("Condition is not fullfilled!");
                     }
         }
-        }
-*/
+        }*/
+
 
 //JAVA 2.4. ZADATAK 2 SORTIRANJE I SABIRANJE NIZOVA
 /*package itacasovi;
@@ -251,6 +256,10 @@ public class ITAZadaci{
         System.out.println("This is the original array " + Arrays.toString(array));
         Arrays.sort(array);        
         System.out.println("This is the sorted array " + Arrays.toString(array));
+        Object objectArray[] = {2, 3, "Moamer"};
+        
+        System.out.println(Arrays.toString(objectArray));
+        
     }
 }*/
 
@@ -301,7 +310,7 @@ public class ITAZadaci{
     
 public class ITAZadaci{  
         public static void main(String[] args){
-        int[] [] matrix
+        int[][] matrix
                 = {
                     {1, 2, 3, 4},
                     {5, 6, 7, 8},
@@ -319,6 +328,7 @@ public class ITAZadaci{
         System.out.println(arr[1][1]);
         
 }
+}
 }*/
 
 //POPUNJAVANJE NIZOVA - FILL METODA
@@ -329,7 +339,7 @@ public class ITAZadaci{
         public static void main(String[] args){
         int[] array = new int[6];
         //Arrays.fill(array, 7);//Postavljanje vrijednosti svih elemenata niza
-        Arrays.fill(array, 0, 4, 7);//Postavljanje vrijednosti samo nekih elemenata niza; početni indeks je 0, a krajnji 4, ne uključujući krajnji index (4)
+        Arrays.fill(array, 1, 5, 7);//Postavljanje vrijednosti samo nekih elemenata niza; početni indeks je 0, a krajnji 4, ne uključujući krajnji index (4)
         System.out.println(Arrays.toString(array));//[7, 7, 7, 7, 7, 7]      
 }
 }*/
@@ -351,7 +361,7 @@ public class ITAZadaci{
         Arrays.sort(a);
         System.out.println(Arrays.toString(a));
         System.out.println(Arrays.toString(Almir.niz));
-        System.out.println(Arrays.binarySearch(a, 4)); //Povratna vrijednost (index) će biti >=0, ako je traženi element (broj u nizu) pronađen; 2
+        System.out.println(Arrays.binarySearch(a, 5)); //Povratna vrijednost (index) će biti >=0, ako je traženi element (broj u nizu) pronađen; 2
         System.out.println(Arrays.binarySearch(a, 89)); //Povratna vrijednost (mjesto u nizu prema vrijednosti, a ne prema indeksu)će biti <0, ukoliko traženi element nije pronađen; npr. -7 na 7. mjestu u nizu (nije prema indexu)
        System.out.println(Arrays.toString(kafa));
         }
@@ -381,12 +391,12 @@ public class ITAZadaci{
         array[5] = 33;
         int destArray[] = new int[array.length + array1.length + array2.length];
         
-        System.out.println("Array length is: " + destArray.length);// 9
+        System.out.println("Array length is: " + destArray.length);// 12
 
         System.arraycopy(array, 0, destArray, 0, array.length); //Kopiranje 1. niza u 3.
         System.arraycopy(array1, 0, destArray, array.length, array1.length); //Kopiranje 2. niza u 3.
         System.arraycopy(array2, 0, destArray, array.length + array1.length, array2.length);
-        
+                       
         System.out.println("Elements are: "); //Elements are
         System.out.println(Arrays.toString(destArray));//[3, 5, 2, 6, 1, 6, 12, 13, 14]
 }
@@ -449,16 +459,16 @@ public class ITAZadaci {
             System.out.println(osnovniPodaci.age);
             
             double a = 3.5;
-            int b = 5;
+            int b = 2;
             double c = b / a;
-            System.out.printf("Three plus 5 = %.8f ", c);
+            System.out.printf("Three plus 5 = %.2f ", c);
             System.out.println(Integer.toBinaryString(~b));            
             }
-}
 }*/
 
+/*
 //KLASNA (STATIČKA) PROMJENJIVA
-/*package itacasovi; 
+package itacasovi; 
     class MyClass{
     public static int myVariable;
 }

@@ -7,7 +7,7 @@ package predavanje6;
 // OUTER KLASA
 public class Person {    //Ukoliko ova klasa nije "public", neće se moći naslijeđivati u drugim paketima; 
         public static int counter = 0; //1.1. Static property; dijele ga svi objekti/klase koje naslijeđuju klasu "PERSON"
-        public String name;            //1.2. Instance or object property; ukoliko stoji samo "String", "name" će biti vidljivo samo unutar paketa
+        protected String name;            //1.2. Instance or object property; ukoliko stoji samo "String", "name" će biti vidljivo samo unutar paketa
         protected String surname;  //Objekat sa objektnim/instancnim poljem
         public int age;            //Objekat sa objektnim/instancnim poljem
         private double balance = 0.0;    //Objekat sa objektnim/instancnim poljem
@@ -59,8 +59,34 @@ public class Person {    //Ukoliko ova klasa nije "public", neće se moći nasli
         public void withdrawSomeMoneyOnAccount(double money){
             balance = balance - money;
         }
+        
+        public void changeBalanceState(double money){
+            balance = balance - 10.0;
+            //changeBalanceState(money, false); //Moguće je iz jedne funkcije pozivati drugu (funkcija ispod)
+        }
+        
+        public void changeBalanceState(double money, boolean increase){
+            if(increase){
+                balance = balance + money;
+            } else {
+                balance = balance - money;
+            }
+        }
+        
+        public void changeBalanceState(){ //Nije moguće kreirati dvije identične funkcije; prethodna sadrži parametre
+            balance = balance - 2.30;
+        }
+        
         public double getBalance(){            
             return balance;
+        }
+        
+        public String getName(){            
+            return name;
+        }
+        
+        public String getSurname(){            
+            return surname;
         }
 }
    

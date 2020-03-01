@@ -1,0 +1,14 @@
+U ovom paketu nalazi se:
+
+1) Interface (apstrakcija) - uvodi koncept naslijeđivanja
+
+2) Entiteti - tabele u bazi
+
+3) Klasa DAO - osnovni interface koji služi za ažuriranje podataka u tabeli
+   DAO šablon - decouplingili razdvajanje DOMAIN model objekata from persistence layer objekata
+   DAO - izvršava CRUDE operacije (create, retreive, update, delete)
+
+4) Kolekcije npr. <Book>
+
+5) Upisivanje i ispisivanje iz baze
+

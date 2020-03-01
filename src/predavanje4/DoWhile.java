@@ -9,7 +9,8 @@ public class DoWhile { //Bez obzira da li se unese broj koji je manji od 11 ili 
         
         do{
             System.out.println("Printam count = " + count);
-            count++;
-        }while(count<11);
+            count ++;
+            count = count + 2;            
+        }while(count<4);
     }
 }

@@ -1,0 +1,27 @@
+U ovom paketu nalazi se:
+
+1) Uputstvo za konekciju na bazu i ažuriranje podataka u bazi
+
+    try(Connection connection = DriverManager.getConnection(URL, USERNAME, PASSWORD);){
+       Statement statement = connection.createStatement();            
+       String sqlstatement = "SELECT * FROM sakila.actor, sakila.address;";
+       statement.execute(sqlstatement); // ova ili sljedeća linija koda može da se koristi, ali ne obje            
+       ResultSet resultSet = statement.executeQuery(sqlstatement);
+       String sqlUpdate = "UPDATE person.person SET  'Address' = ? WHERE id = ?";
+       PreparedStatement ps = connection.prepareStatement(sqlUpdate);       
+       ps.setInt(1, 2); // 1 = Parametar; 2 = id
+       int rowNumber = ps.executeUpdate();
+       System.out.println(rowNumber); }
+
+2) Metode za ispisivanje iz baze:
+
+a) osoba
+b) specifičnih prezimena
+c) specifičnih prezimena
+d) osoba po abecednom redu (funkcija "Collections")
+
+3) Funkncije ".startsWith(args);", "Compare to" i implementiranje interfejsa "Comparable"
+
+4) Funkcionalni INTERFACE
+
+5. Lambda operator za kreiranje objekata tipa funkcionalni interface

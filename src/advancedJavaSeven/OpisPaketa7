@@ -1,0 +1,43 @@
+
+
+1) Kolekcije i dizajn šabloni; pravljenje vlastitih kolekcija i kreiranje vlastitog kontejnerskog tipa
+
+2) Connection objekat (DriverManager.getConnection(url, userName, password);
+
+3) (Prepared)Statement
+
+4) DAO
+
+5) ResultSet
+
+6) Konekcija na bazu i izvršavanje komande
+        try(Statement statement = connection.createStatement()){
+            String sqlStatement = "SELECT * FROM Book";
+            statement.executeQuery(sqlStatement);
+           }catch(SQLException e){
+            throw new RuntimeException(e.getMessage());
+            }
+
+7) Iterator
+
+8) Iterable se dodaje da bi kolekcija bila iterabilna i da nametne da je potreban 'Iterator', iterator
+
+ZADAĆA
+
+1) PersonContainer -> List<Person>
+2) Implements Iterable<Person>
+3) iterator() -> rezultat je objekat tipa Iterator<Person>
+4) PersonIterator implements Iterator<Person>
+
+NOTE: 
+a) Kod SET-a nije moguć indeksiran pristup njegovim članovima
+b) Kolekcije, liste i array liste i linked liste i kontejnerski tipovi su dinamički nizovi
+c) Kolekcije, liste i array liste i linked liste koriste u pozadini nizove, a od fiksnog niza naprave novi koji je za
+   jedan uvećan ako se pozove jedna metoda ili umanje za jedan (remove metodom)
+d) Kolekcije su klase parametrizovane elementima (tipom elemenata) koje sadrže
+e) System.lineSeparator()
+f) iterator - stil iteriranja kroz 'container'
+g) Iterator ima dvije glavne funkcije: 'hasNext' i 'next'
+h) Svaka kolekcija ima svoj iterator (java.lang)
+i) ArrayList-a je klasa i ima funkciju ITERATOR i svoj iterator koji se zove "Itr", a "Itr" je klasa koja se odnosi
+   na način iteriranja kroz ArrayList, odnosno "Itr" je privatna inner klasa

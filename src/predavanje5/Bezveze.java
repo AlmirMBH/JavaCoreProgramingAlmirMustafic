@@ -1,5 +1,7 @@
 package predavanje5;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 public class Bezveze {
@@ -35,6 +37,6 @@ public class Bezveze {
         String ispis = foundIt ? "Uneseni broj " + uneseniBroj + " postoji na indeksu " + i + " " + j : "Broj ne postoji!";        
         System.out.println(ispis);
                 
-        System.out.println("Unesni broj " + uneseniBroj + " postoji na ineksu " + i + " " + j);
-        }
-    }
+        System.out.println("Unesni broj " + uneseniBroj + " postoji na ineksu " + i + " " + j); 
+ }
+}

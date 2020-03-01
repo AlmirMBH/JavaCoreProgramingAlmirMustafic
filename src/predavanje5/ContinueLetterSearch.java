@@ -11,6 +11,7 @@ public class ContinueLetterSearch {
         
         int i;
         int brojPojavljivanja = 0;
+        
         char[] nizKaraktera = text.toCharArray();
         for(i = 0; i<nizKaraktera.length; i++){
             char jednoSlovo = nizKaraktera[i];
@@ -20,6 +21,7 @@ public class ContinueLetterSearch {
             }
             brojPojavljivanja++;
         }
+        
         System.out.println("Uneseno slovo " + unesenoSlovo + " pojavljuje se " + brojPojavljivanja + " puta.");
     }
 }
