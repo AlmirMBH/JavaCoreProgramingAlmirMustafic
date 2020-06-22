@@ -1,7 +1,7 @@
 package advancedJavaSix;
 
 public enum ConnectionEnum {
-    URL("jdbc..."),
+    URL("jdbc:mysql://localhost:3306/my_database"),
     PASSWORD("password"),
     USERNAME("root");
     

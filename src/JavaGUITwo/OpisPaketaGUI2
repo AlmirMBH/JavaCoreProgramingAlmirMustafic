@@ -1,0 +1,73 @@
+
+    NAPOMENA: 
+    1) Klasa BUTTONPANELTWO napravljena je prije nego što se ona tokom časa počela komplikovati da bi se
+    uradio drugi     zadatak. U klasi BUTTON panel nalazi se kod za zadatak 1, tj. za kreiranje aplikacije sa 3 button-a.
+    Klase ImageIconLoader i BUTTONPANELTWO napravljene su za zadatak 2. 
+
+    2) Zbog izuzetno nejasno npisanog koda, klasa ProzorTester razložena je na 4 dodatne klase:
+    a) ProzorTester - nepregledan kod sa časa koji sadrži lambda oberator za pozivanje statičkih i objektnih funkcija,
+       metodu referenciranja, statičke klase...
+    b) ProzorTesterOne - Kreiranja objekta i poziv objektne metode za JFrame putem LAMBDA operatora
+    c) ProzorTesterTwo - Pozivanje statičke metode upotrebom LAMBDA operatora
+    d) ProzorTesterThree - pozivanje statičke metode iz iste klase metodom referensiranja "::"
+    e) Poziv prozora iz MAIN metode ili preko EventQueue
+
+1) Runnable Interface (implements) - neophodan za novi Thread
+
+2) Thread (extends)
+
+3) Metoda run() iz java.lang Runnable
+
+4) Metoda start(), run(), currentThread() iz java.lang Thread
+
+5) EventQueue.invokeLater() - statička metoda
+
+6) Uslov da metoda ne bude apstraktna je da ima modifikator vidljivosti i definiciju onoga što radi, ne mora imati
+   svoj blok koda. Na primjer:    public void run(){}
+
+7) LAMBDA -> shortcut za NEW tj. za kreiranje objekata funkcionalnog interfejsa, ne svih. Takođe, ona može i da
+   poziva (statičke) metode. U tom slučaju postoji i drugi operator koji se zove metod referenciranja "::"
+
+8) Metod referenciranja "::" 
+
+9) Geek panel i chechbox; radio button znači da se odabirom jedne opcije isključuju sve druge
+
+10) Dobra praksa je da se prozor vezan za grafičku aplikaciju otvara u drugom, a da MAIN Thread inicira
+
+11) NEOPHODNE STVARI ZA KREIRANJE GRAFIČKOG INTERFEJSA U SWING-U
+a) JFrame -> prozor koji ima okno sa sadržajem -> content pane
+b) Kontrole -> JButton, JTextField, JComponent...
+c) LayoutManager -> slaganje komponenti
+
+KLASA BUTTONPANEL
+
+12. METODE
+a) setVerticalTextPosition(SwingConstants.CENTER);
+b) setHorizontalTextPosition(SwingConstants.LEADING);
+c) setActionCommand("DISABLE");
+d) addActionListener
+e) setEnabled(true) / setEnabled(false)
+f) setMnemonic(KeyEvent.VK_D); // Upotreba je preko tastera: ALT + D 
+g) actionPerformed(ActionEvent e)
+h) getActionCommand()
+i) ImageIcon leftImageIcon = createImageIcon("right.png");
+
+13. URL url = ButtonPanel.class.getResource(name); // dohvatanje resursa koji se nalaze u istom paketu kao klasa iz
+    koje se dohvataju
+
+14. Action Listener
+
+15. Mnemonics
+
+16. ImageIconLoader iconLoader = new ImageIconLoader();
+
+IMPORTI
+
+a) import java.awt.event.ActionEvent;
+b) import java.awt.event.ActionListener;
+c) import java.awt.event.KeyEvent;
+d) import java.net.URL;
+e) import javax.swing.ImageIcon;
+f) import javax.swing.JButton;
+g) import javax.swing.JPanel;
+h) import javax.swing.SwingConstants;

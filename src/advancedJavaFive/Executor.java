@@ -17,7 +17,7 @@ public class Executor {
         personTester1.test(person);                        // gornje linije koda; može se koristiti bilo koja od njih  
         PersonTester personTester2 = (Person p) -> true;
         PersonTester personTester3 = p -> true;
-        
+                
         PersonTester personTester4 = p -> {
             boolean result = p.getCity().equals("Zenica");
             return result;

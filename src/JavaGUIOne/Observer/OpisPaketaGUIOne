@@ -1,0 +1,25 @@
+
+1) Observer
+2) Observable (Subject)
+3) Pane
+4) Buttons
+5) Set and Update data
+6) Notify users
+7) Register users
+8) Swing
+9) Celsius - Fahrenheit Converter
+
+
+
+
+- Java Foundation Classes (JFC) je set biblioteka koje pomažu u kreiranju GUI aplikacija. Sastavni dijelovi su:
+a) Swing (podskup JFC-a)
+b) Look and feel
+c) Accessibility API
+d) Java 2D
+e) Lokalizacija
+
+- Osnova Swing-a bazirana je na AWT framework-u, a biblioteka se sastoji od 18 paketa. Platformski je nezavisan.
+
+- Swing i njegove komponente bazirane su na MVC šablonu (model, view, controller)
+

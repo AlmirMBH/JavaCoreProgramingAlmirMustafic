@@ -15,7 +15,8 @@ public class BookInsertExecutor {
         
         LocalDate publishingLocalDate = LocalDate.of(2019, Month.MARCH, 1);
         Date publishingDate = Date.valueOf(publishingLocalDate);
-        Book book = new Book(0, 
+        Book book = new Book(
+                1, 
                 "Tvrdava", 
                 "Nije duga", 
                 "Mesa", 
